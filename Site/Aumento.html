@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Cadastro.png" type="image/x-icon">
+    <link rel="stylesheet" href="PréPhp.css">
+    <title>Aumento</title>
+</head>
+<body onload="Aviso()">
+
+    <br>
+
+    <H1>Aumento salarial</H1>
+
+    <br><br>
+
+    <nav class="Enderecos">
+        <li>
+          <ol>
+          <a href="./Home.html"><img src="./Assets/Home.png" title="Home" class="iconenav">Home
+          </a>  
+          </ol>
+        </li>  
+          <br>
+          <hr>
+          <ol>
+          <a href="./Funcoes.html"><img src="./Assets/Cadastro.png" title="Home" class="iconenav">Funções
+            </a>  
+          </ol>
+        </li> 
+    </nav>
+
+    <form action="Aumento.php" method="post">
+
+    Nome do funcionário:
+    <input type="text" placeholder="Ex:Pedro" id="nome" name="nome">    
+
+    <br>
+
+    Salario do funcionário:
+    <input type="number" min="1200" name="Sal" placeholder="Ex:1200" id="sal">
+
+    <br>
+
+    % do aumento:
+    <input type="number" min="1" max="1000" name="Au" id="Au" placeholder="Ex:30">
+
+    <br>
+
+    <input type="reset" class="limpar" value="Limpar"><input type="submit" class="enviar" value="Enviar" onclick="Enviar()">
+    </form>
+
+    <div class="divredes">
+        <nav class="redes">
+            <div class="espaco">ㅤ</div>
+            <a href="https://Instagram.com/Itz.luizkkj" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/luizfernando.pdasilva.73" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://github.com/DevSunS2" target="_blank"><img src="./Redes/GitHub.png"class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+        <nav class="redes">
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.instagram.com/Yurig_yt/" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/profile.php?id=100007616051600" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.youtube.com/c/FuiEuMesmo_OFC" target="_blank"><img src="./Redes/YouTube.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+    </div>
+
+    <script>
+
+        function Aviso() {
+            alert('Favor informar os dados corretamente!');   
+        }
+
+        function Enviar() {
+
+        var nome = document.getElementById("nome").value;
+        var sal = document.getElementById("sal").value; 
+        var au = document.getElementById("Au").value; 
+
+        if (nome=='' | sal=='' | au=='') {
+            event.preventDefault();
+            alert('Digite um valor válido!!');                 
+        } 
+           
+        }   
+    </script>
+
+</body>
+</html> 

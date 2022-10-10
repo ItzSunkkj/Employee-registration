@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Cadastro.png" type="image/x-icon">
+    <link rel="stylesheet" href="Funcoes.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <br>
+
+    <H1> Cadastro de</H1><br><h1> funcionários</H1>
+
+    <br><br>
+
+    <nav class="Enderecos">
+        <li>
+          <ol>
+          <a href="./Home.html"><img src="./Assets/Home.png" title="Home" class="iconenav">Home
+          </a>  
+          </ol>
+        </li> 
+    </nav>
+
+<section>
+
+    <div>
+        <p>Clique em <label>⬅</label> e <label>➡</label> para ver outras funções</p> 
+        <br>
+        <h6 style="color: #fff;">(Abaixo da opção irá aparecer seus detalhes)</h6>
+    </div>
+
+    <br>
+
+    <input type="submit" value="⬅" onclick="Anterior()" class="Anterior">
+    <input type="text" value="Cadastar" id="Funcao" disabled class="Funcao">
+    <input type="submit" value="➡" onclick="Proximo()" class="Proximo">
+
+    <br>
+    <br>
+
+    <textarea name="Informacao" id="Infor" cols="100" rows="5" readonly va>
+        Cadastra o funcionário para que tenha todos o dados salvos na empresa
+    </textarea>
+    <!-- <input type="text" name="funcao" id="funcao" hidden> -->
+
+    <br>
+
+    <a href="Cadastro.html" id="site" class="Comecar"><input type="submit" value="Começar" class="Comecar"></a>
+
+
+    
+
+</section>
+
+    <div class="divredes">
+        <nav class="redes">
+            <div class="espaco">ㅤ</div>
+            <a href="https://Instagram.com/Itz.luizkkj" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/luizfernando.pdasilva.73" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://github.com/DevSunS2" target="_blank"><img src="./Redes/GitHub.png"class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+        <nav class="redes">
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.instagram.com/Yurig_yt/" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/profile.php?id=100007616051600" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.youtube.com/c/FuiEuMesmo_OFC" target="_blank"><img src="./Redes/YouTube.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+    </div>
+
+    <script>
+
+        function Anterior() {
+            event.preventDefault();
+            var Funcao = document.getElementById("Funcao").value;
+        
+            if (Funcao=="Aumento salarial") {
+                document.getElementById("Funcao").value = "Cadastar";
+                document.getElementById("site").href = "Cadastro.html";     
+                document.getElementById("Infor").value = "Cadastra o funcionário para que tenha todos o dados salvos na empresa"; 
+            }
+
+            if (Funcao=="Alterar função") {
+                document.getElementById("Funcao").value = "Aumento salarial"; 
+                document.getElementById("site").href = "Aumento.html"; 
+                document.getElementById("Infor").value = "Altera o salario do funcionário sobre uma taxa informada pelo usuario do site";
+            }
+        }
+
+
+        function Proximo() {
+            event.preventDefault();
+            var Funcao = document.getElementById("Funcao").value;
+            
+            if (Funcao=="Cadastar") {
+                document.getElementById("Funcao").value = "Aumento salarial"; 
+                document.getElementById("site").href = "Aumento.html"; 
+                document.getElementById("Infor").value = "Altera o salário do funcionário sobre uma taxa informada pelo usuário do site";
+            }
+
+            if (Funcao=="Aumento salarial") {
+                document.getElementById("Funcao").value = "Alterar função";
+                document.getElementById("site").href = "Alterar.html"; 
+                document.getElementById("Infor").value = "Altera a função informada no cadastro de um funcionário";
+            }
+        }        
+
+        document.getElementById("site").href = "Cadastro.html";     
+            
+    </script>
+
+</body>
+</html> 

@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+}
+
+
+
+body {
+    background: url('https://images4.alphacoders.com/592/592367.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+    font-family: monospace;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.171);
+    color: white;
+    display: inline;
+    border-radius: 20px;
+    padding: 1,2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    filter: blur(px);
+    width: min-content;
+}
+
+form {
+    display: block;
+    background-color: #000;
+    color: white;
+}
+
+input,select {
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    text-align: center;
+}
+
+.limpar {
+    text-transform: uppercase;
+    color: red;
+    border: 2px red solid;
+    padding: 10px; 
+    opacity: 70%;
+    cursor: pointer;       
+    transition: 0.5s;  
+    margin-right: 10px;       
+}
+
+
+.limpar:hover{
+    letter-spacing: 0.25em;  
+    opacity: 100%;    
+    background-color: #000000;
+}
+
+.enviar {
+    text-transform: uppercase;    
+    color: rgb(0, 255, 0);
+    border: 2px rgb(0, 255, 0) solid;
+    padding: 10px;   
+    opacity: 70%;   
+    cursor: pointer;
+    margin-bottom: 10px; 
+    margin-top: 10px;    
+    transition: 0.5s;            
+}
+
+.enviar:hover { 
+    letter-spacing: 0.25em;  
+    opacity: 100%;
+    background-color: #000000;    
+}
+
+
+/* Navs */
+
+.Enderecos {
+    background: linear-gradient(45deg, rgb(88, 88, 88), rgb(131, 131, 131));
+    border-radius: 100px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 7px;
+    transition: 400ms;
+    margin-bottom: 20px;
+}
+
+.Enderecos img {
+    filter: invert(100%);
+}
+
+a {
+    color: #fff;
+    background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)), linear-gradient(to right, rgb(61, 0, 97), rgb(129, 0, 189), rgb(234, 0, 255));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-decoration: none;
+}
+  
+a:hover,a:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+/* .Enderecos:hover {
+    width: 20%;
+    border-radius: 10px;
+    transition: 0.5s;
+} */
+
+li,ol{
+    display: inline-flex;
+    margin-top: 2px;
+    margin: 0;
+}
+
+.redes {    
+    display: inline-flex;
+    width: min-content;
+    background-color: #000;
+    margin: auto;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.redes img {
+    border-right: 20px;
+    margin: auto;
+}
+
+
+
+/* Detalhes */
+
+.espaco {
+    display: block;
+    width: 70px;
+    color: #000;
+}
+
+.iconenav {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.icone {
+    height: 40px;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.icone:hover {
+    height:  50px;
+}
+
+.divredes {
+    background: linear-gradient(to bottom, #000 ,#000000a2 );
+    height: 100%;
+}
+
+.divredes nav a {
+    background: transparent;
+}
+
+
+
+/* Audio */
+
+audio {
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: -6px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
+
+
+
+@keyframes rgb {
+    0%,100% {
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+
+/* ---------------------------------------------- */
+/*              Versão para celular               */
+/* ---------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: unset;
+    }
+
+    h1 {
+        background-color: rgba(255, 255, 255, 0.171);
+        color: white;
+        display: inline;
+        border-radius: 20px;
+        padding: 1,2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 20px;
+        width: min-content;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2px;
+    }
+
+    .Enderecos {
+        background: linear-gradient(45deg, rgb(88, 88, 88), rgb(131, 131, 131));
+        border-radius: 50px;
+        width: calc(70% - 80px);
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 7px;
+        transition: 1.5s;
+    }
+    
+    .Enderecos:hover {
+        width: 24%;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .titulos {
+        background: linear-gradient(45deg, rgb(88, 88, 88), rgb(131, 131, 131));
+        border-radius: 100px;
+        width: 64%;
+        margin: auto;
+        filter: invert(100%);
+        padding: 7px;
+        transition: 1.5s;
+        margin-bottom: 20px;
+    }
+    
+    .titulos:hover {
+        width: 44%;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .imagens {
+        height: 30%;
+        width: 30%;
+    }
+    
+    .imagens1 {
+        height: 30%;
+        width: 30%;
+        filter: invert(100%);
+    }
+
+    label{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        user-select: none;
+    }
+
+    .redesL {
+        display: inline-flex;
+        width: min-content;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 2%;
+        margin-bottom: 2px;
+        user-select: none;
+        
+    }
+
+    .redes {    
+        display: inline-flex;
+        width: min-content;
+        background-color: #000;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .redesy {    
+        display: inline-flex;
+        width: min-content;
+        background-color: #000;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .redesY {
+        display: inline-flex;
+        width: min-content;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 160%;
+        user-select: none;
+    }
+    
+    .redes img {
+        border-right: 20px;
+        margin: auto;
+    }
+
+    .espaco {
+        display: block;
+        width: 30px;
+        color: #000;
+    }
+
+    audio {
+        width: 50%;
+        height: 6%;
+        right: 2%;
+        bottom: 2%;
+        position: fixed;
+        z-index: 2;
+        opacity: 80%;
+    }
+
+    .voltar {
+        height: 40px;
+        width: 40px;
+        opacity: 20%;
+    }
+
+    section {
+        width: auto;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+        color: #fff;
+    }
+}

@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+}
+
+
+
+body {
+    background: url('./Assets/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+    font-family: monospace;
+    font-size: 25px;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.171);
+    color: white;
+    display: inline;
+    border-radius: 20px;
+    padding: 1,2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    filter: blur(px);
+    width: min-content;
+}
+
+form {
+    display: block;
+    background-color: #000;
+    color: white;
+}
+
+input {
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    font-size: large;
+    text-align: center;
+}
+
+.Proximo {  
+    color: rgb(255, 255, 255);
+    padding: 7px;   
+    opacity: 100%;   
+    cursor: pointer;
+    margin-bottom: 10px; 
+    margin-top: 10px;     
+    transition: 0.5s;  
+    border: 2px solid #78135f;    
+}
+
+.Proximo:hover {
+    filter: invert(100%);
+}
+
+.Anterior {   
+    color: rgb(255, 255, 255);
+    padding: 7px;   
+    opacity: 100%;   
+    cursor: pointer;
+    margin-bottom: 10px; 
+    margin-top: 10px;  
+    transition: 0.5s; 
+    border: 2px solid #22033e;              
+}
+
+.Anterior:hover {
+    filter: invert(100%);
+}
+
+textarea{
+    resize: vertical;
+    min-height: auto;
+    width: 95%;
+    background: #000;
+    color: #fff;
+    font-family: consolas;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.Comecar input{
+    text-transform: uppercase;    
+    color: rgb(0, 255, 0);
+    border: 2px rgb(0, 255, 0) solid;
+    background-color: #000000; 
+    padding: 10px;   
+    opacity: 70%;   
+    cursor: pointer;
+    margin-bottom: 10px; 
+    margin-top: 10px;    
+    transition: 0.5s;            
+}
+
+.Comecar input:hover { 
+    letter-spacing: 0.25em;  
+    opacity: 100%;
+    background-color: #000000;    
+}
+
+.Comecar{
+    color: #fff;
+    background: none;
+    transition: background-size 400ms;
+    text-decoration: none;
+}
+
+/* Navs */
+
+.Enderecos {
+    background: linear-gradient(45deg, rgb(88, 88, 88), rgb(131, 131, 131));
+    border-radius: 100px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 7px;
+    transition: 400ms;
+    margin-bottom: 20px;
+}
+
+.Enderecos img {
+    filter: invert(100%);
+}
+
+a {
+    color: #fff;    
+    background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)), linear-gradient(to right, rgb(61, 0, 97), rgb(129, 0, 189), rgb(234, 0, 255));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-decoration: none;
+}
+  
+a:hover,a:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+.Enderecos:hover {
+    width: 10%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+li,ol{
+    display: inline-flex;
+    margin-top: 2px;
+    margin: 0;
+}
+
+.redes {    
+    display: inline-flex;
+    width: min-content;
+    background-color: #000;
+    margin: auto;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.redes img {
+    border-right: 20px;
+    margin: auto;
+}
+
+
+
+/* Detalhes */
+
+.espaco {
+    display: block;
+    width: 70px;
+    color: #000;
+}
+
+.iconenav {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.iconenav {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.icone {
+    height: 40px;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.icone:hover {
+    height:  50px;
+}
+
+.divredes {
+    background: linear-gradient(to bottom, #000 ,#000000a2 );
+}
+
+.divredes nav a {
+    background: transparent;
+}
+
+label {
+    animation: rgb 5s infinite linear;
+    color: aqua;
+}
+
+
+
+
+/* Scrool bar */
+
+section {
+    padding: 50px;
+    background: #000;
+    transition: 0.5s;
+}
+
+section:hover {
+    background: transparent;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+
+@keyframes rgb {
+    0%,100% {
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+@keyframes animate {
+    0%,100% {
+        filter: hue-rotate(0deg);    
+    }
+
+    50% {
+        filter: hue-rotate(360deg);    
+    }
+}
+
+/* ---------------------------------------------- */
+/*              Versão para celular               */
+/* ---------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: unset;
+    }
+
+    h1 {
+        background-color: rgba(255, 255, 255, 0.171);
+        color: white;
+        display: inline;
+        border-radius: 20px;
+        padding: 1,2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 15px;
+        width: min-content;
+    }
+
+    textarea {
+        max-height: min-content;
+    }
+
+    .Enderecos {
+        background: linear-gradient(45deg, rgb(88, 88, 88), rgb(131, 131, 131));
+        border-radius: 50px;
+        width: calc(70% - 80px);
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 7px;
+        transition: 1.5s;
+    }
+    
+    .Enderecos:hover {
+        width: 24%;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    label {
+        animation: rgb 5s infinite linear;
+        color: aqua;
+    }
+
+    .redesL {
+        display: inline-flex;
+        width: min-content;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 2%;
+        margin-bottom: 2px;
+        user-select: none;
+        
+    }
+
+    .redes {    
+        display: inline-flex;
+        width: min-content;
+        background-color: #000;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .redesy {    
+        display: inline-flex;
+        width: min-content;
+        background-color: #000;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .redesY {
+        display: inline-flex;
+        width: min-content;
+        margin: auto;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 160%;
+        user-select: none;
+    }
+    
+    .redes img {
+        border-right: 20px;
+        margin: auto;
+    }
+
+    .espaco {
+        display: block;
+        width: 30px;
+        color: #000;
+    }
+
+    section {
+        padding: 10px;
+        width: auto;
+    }
+    
+    input {
+        border-radius: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-color: rgb(20, 20, 20);
+        color: rgb(255, 255, 255);
+        padding: 1px;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .Funcao {
+        width: 58%;
+    }
+}

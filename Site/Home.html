@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Home.png" type="image/x-icon">
+    <link rel="stylesheet" href="Home.css">
+    <title>Pagina principal</title>
+</head>
+<body>
+
+    <div class="ScrollShow" id="ScrollShow"> 
+    <img src="Assets/Slide.gif" class="scroll" id="scroll">
+    <br>
+    Role para <br>
+    baixo
+</div>
+
+    <br>
+
+    <H1 id="comeco">Seja Bem vindo</H1>
+    <br>
+    <h1>ao nosso site</h1>
+
+    <br><br>
+
+    <nav class="Enderecos">
+      <li>
+        <ol>
+        <a href="./Funcoes.html"><img src="./Assets/Cadastro.png" title="Cadastro"class="iconenav">Funções
+        </a>
+        </ol>
+      </li>  
+    </nav>
+
+    <br>
+
+    
+    <!-- <audio src="Assets/late nights.mp3" autoplay loop controls id="Audio"></audio>  -->
+    <audio id="Audio" controls autoplay>
+        <source src="assets/late nights.mp3" type="audio/mpeg">
+        <source src="assets/Sad lofi.mp3" type="audio/mpeg">
+        <source src="assets/Champagne & Sunshine.mp3" type="audio/mpeg">
+    </audio>
+
+    <nav class="titulos">
+        Ir para
+        <br>
+        <ul>
+            <li><a href="#Finalidade" title="Ir para trecho Finalidade">Finalidade</a></li>
+            <li></li><a href="#Funcionamento" title="Ir para trecho Funcionamento">Funcionamento</a></li>
+            <li></li><a href="#Aplicações" title="Ir para trecho Aplicações">Aplicações</a></li>
+            <li></li><a href="#Contatos" title="Ir para meios de Contatos">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <a href="#comeco"><img src="Assets/Voltar.png" class="voltar" title="Voltar"></a>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div> 
+    
+        <hr>
+
+        <section id="Finalidade">
+
+        <!-- <img src="Assets/Scrool.gif" class="scroll" id="scroll"> -->
+
+         <h2>Qual a finalidade de nosso site?</h2>
+         <p>
+            De maneira bem simplificada, o nosso site tem como objetivo facilitar e torna o papel de muitas pessoas
+            algo fácil de se manipular e gerenciar. Tenho certeza que você iria perder muito tempo cadastrando pessoa
+            por pessoa em um papel ou algo do tipo, fora os problemas que podem ocorrer como a perca dos dados e a
+            difícil manupulação dos dados necessários.
+         </p>
+
+         <img src="./Assets/Finalidade.png" class="imagens">
+
+        </section>
+
+         <hr>
+
+        <section id="Funcionamento">
+
+         <h2>Como funciona?</H2>   
+         <p>
+            Nosso projeto tem como principal objetivo, a garantia que os dados fornecidos serão guardados de forma correta,
+            sendo assim nos utilizamos de ótimos métodos para guardar variáveis e informações para assegurar que tudo será
+            feito com a melhor qualidade possível. Nós guardaremos os dados informados e iremos inserir em nosso sistema
+            para que tudo seja de fácil visualização e controle de acordo com sua necessidade.
+         </p>
+
+         <img src="./Assets/funcionalidades2.png" class="imagens">
+
+        </section>
+
+         <hr>
+
+        <section id="Aplicações">
+
+           <h2>Aplicações</h2>
+           <p>
+              Nosso programa como já dito pode ser usado para facilitar a vida de muitos, tornando o processo de
+              cadastro bem mais fácil e eficiente. Podendo ser usado em grandes empresas e pequenas empresa que estão começando agora,
+              pois caso não tenham esse costume de cadastrar funcionários, o nosso programa pode ajudá-las. E até mesmo em grandes 
+              empresas tornando o processo de inserção e alteração da dados algo bem simples de se fazer.
+           </p>
+
+           <img src="./Assets/Aplicações.png" class="imagens">
+   
+        </section>
+
+        <hr>
+
+        <Section class="Contatos">
+            <h4>Contatos/Redes sociais</h4>
+        </Section>    
+    <div class="divredes">
+        <label id="Contatos">Luiz F</label>
+        <nav class="redesL">
+            <div class="espaco">ㅤ</div>
+            <a href="https://Instagram.com/Itz.luizkkj" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/luizfernando.pdasilva.73" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://github.com/DevSunS2" target="_blank"><img src="./Redes/GitHub.png"class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+        <br>
+        <label>Yuri G</label>
+        <nav class="redesY">
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.instagram.com/Yurig_yt/" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/profile.php?id=100007616051600" target="_blank"><img src="./Redes/Facebook.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.youtube.com/c/FuiEuMesmo_OFC" target="_blank"><img src="./Redes/YouTube.png"class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>     
+        <br><br>  
+    </div> 
+
+   
+
+    <script>
+
+    let progress = document.getElementById('progressbar');
+    let totalheight = document.body.scrollHeight - window.innerHeight;
+    let visivel = document.getElementById('scroll');
+    let fundo = document.getElementById('ScrollShow');
+
+    ScrollShow.style.transition = "0.5s";  
+
+    window.onscroll = function() {
+        let progressheight = (window.pageYOffset / totalheight) * 100;
+        progress.style.height = progressheight + "%";  
+
+        // Efeito do gif de scroll mouse
+        if (window.pageYOffset > 0) {
+             visivel.style.opacity = 0;
+             ScrollShow.style.display = "none";
+            }   
+    }
+   </script>
+   <script>
+    let faixa = document.getElementById('Audio');
+    faixa.onended = function() {
+
+        if (faixa.scr = "./Assets/late nights.mp3") {             
+                faixa.setAttribute('src', './Assets/Sad lofi.mp3');
+                console.log('Audio definido para Sad Lofi');
+        }
+        else if (faixa.scr = "./Assets/Sad lofi.mp3") {         
+                faixa.setAttribute('src', './Assets/Champagne & Sunshine.mp3');
+                console.log('Audio definido para Champagne & Sunshine');     
+        }
+        else if (faixa.scr = "./Assets/Champagne & Sunshine.mp3") {           
+                faixa.setAttribute('src', './Assets/late nights.mp3');   
+                console.log('Audio definido para Late nights');
+        }
+    };    
+
+   </script>
+</body>
+</html> 

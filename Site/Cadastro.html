@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/Cadastro.png" type="image/x-icon">
+    <link rel="stylesheet" href="PréPhp.css">
+    <title>Cadastro</title>
+</head>
+<body onload="Aviso()">
+
+    <br>
+
+    <H1>Cadastro de funcionários</H1>
+
+    <br><br>
+    
+    <nav class="Enderecos">
+        <li>
+          <ol>
+          <a href="./Home.html"><img src="./Assets/Home.png" title="Home" class="iconenav">Home
+          </a>  
+          </ol>
+        </li>  
+          <br>
+          <hr>
+          <ol>
+          <a href="./Funcoes.html"><img src="./Assets/Cadastro.png" title="Home" class="iconenav">Funções
+            </a>  
+          </ol>
+        </li> 
+    </nav>
+
+    <form action="Cadastro.php" method="post">
+
+    Nome do funcionário:
+    <input type="text" placeholder="Ex:Pedro" id="nome" name="nome">    
+    
+    <br>
+
+    Dia/mês/ano de nascimento:
+    <br>
+    <input type="number" maxlength="2" minlength="2" min="1" max="31" placeholder="DD" id="dia" name="Dia">
+    <input type="number" maxlength="2" minlength="2" min="1" max="12" placeholder="MM" id="mes" name="Mes">
+    <input type="Number" min="1900" max="2007" placeholder="AAAA" id="ano" name="Ano">
+
+    <br>
+
+    Função desse funcionário:
+    <Input type="text" placeholder="Ex:Programador" name="Funcao" id="funcao"></Input>
+
+    <br>
+
+    Tipo de pagamento desse funcionário:
+    <Select name="Pagamento">
+        <option value="diario">Diario</option>
+        <option value="Semanal">Semanal</option>
+        <option value="Mensal">Mensal</option>
+    </Select>
+
+    <br>
+
+    Salario inicial do funcionário:
+    <input type="number" min="1200" name="Sal" id="sal" placeholder="Ex:1200">
+
+    <br>
+
+    <input type="reset" class="limpar" value="Limpar"><input type="submit" class="enviar" value="Enviar" onclick="Enviar()">
+    </form>
+
+    <div class="divredes">
+        <nav class="redes">
+            <div class="espaco">ㅤ</div>
+            <a href="https://Instagram.com/Itz.luizkkj" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/luizfernando.pdasilva.73" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://github.com/DevSunS2" target="_blank"><img src="./Redes/GitHub.png"class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+        <nav class="redes">
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.instagram.com/Yurig_yt/" target="_blank"><img src="./Redes/Instagram.png" class="icone"></a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.facebook.com/profile.php?id=100007616051600" target="_blank"><img src="./Redes/Facebook.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+            <a href="https://www.youtube.com/c/FuiEuMesmo_OFC" target="_blank"><img src="./Redes/YouTube.png" class="icone"> </a>
+            <div class="espaco">ㅤ</div>
+        </nav>
+    </div>
+
+    <script>
+
+        function Aviso() {
+            alert('Favor informar os dados corretamente!');   
+        }
+
+        function Enviar() {
+
+        var nome = document.getElementById("nome").value;
+        var dia = document.getElementById("dia").value;
+        var mes = document.getElementById("mes").value;
+        var ano = document.getElementById("ano").value;
+        var funcao = document.getElementById("funcao").value; 
+        var sal = document.getElementById("sal").value; 
+
+        if (nome=='' | dia=='' | mes=='' | ano==''  | funcao=='' | sal=='') {
+            event.preventDefault();
+            alert('Digite um valor válido!!');                 
+        } 
+        
+        }  
+    </script>
+
+</body>
+</html> 
